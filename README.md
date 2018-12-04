@@ -1,12 +1,12 @@
 ## Spinup@Phase1
 
-__Remote version control__
+### Remote version control
 
 | Status | Service                                                                | Cost      | Alternatives                     | Specifications                      | TODO            | Related | ? |
 |--------|------------------------------------------------------------------------|-----------|----------------------------------|-------------------------------------|-----------------|---------|---|
 |        | [ github.com#Team :registered: ](https://github.com/organizations/new) | $9/usr/mo | github.com#Business ($21/usr/mo) | _All_ devs should have push access+ | - [ ] namespace |         |   |
 
-__CI pipelines__
+### CI pipeline
 
 These accounts should provide admin access to all developer team members. Probably this can be accomplished thru Github x-authentication, but should be ensured.
 
@@ -17,15 +17,14 @@ These accounts should provide admin access to all developer team members. Probab
 |        | [Appveyor](https://www.appveyor.com/pricing/)                                    | free    |              |                | _ditto_                                                    |         |   |
 |        |                                                                                  |         |              |                |                                                            |         |   |
 
-__Builds: archive tools, storage, and distribution__
+### Builds: archive tools, storage, and distribution
 
 - Mechanism to sign and ship nightly and tagged software builds
   + needs to handle authentication schemes for storage write permissions
-- Storage location (eg. Google CP, Amazon S3 :dollar:) for these archived builds
+- Storage location/service for these archived builds
 - Distribution:
   + `homebrew` forumulas (@OSX only), eg. https://github.com/ethereumproject/homebrew-classic, currently supporting go-ethereum and emerald-cli (Vault)
   + Addtionally, `snap`,`apt`, `.AppImage`, `chocolate`, `docker`, et al channels should considered as well
-
 
 | Status | Service                       | Cost         | Alternatives | Specifications                              | TODO | Related | ? |
 |--------|-------------------------------|--------------|--------------|---------------------------------------------|------|---------|---|
@@ -33,22 +32,21 @@ __Builds: archive tools, storage, and distribution__
 |        | Homebrew(#OSX only)           | free         |              | needs a github repo and regular maintenance |      |         |   |
 
 
-__Tooling__
-
+### Tooling 
 
 | Status | Service                                                                      | Cost          | Alternatives                    | Specifications | TODO | Related | ? |
 |--------|------------------------------------------------------------------------------|---------------|---------------------------------|----------------|------|---------|---|
 |        | [Jetbrains IDE#Goland](https://www.jetbrains.com/go/buy/#edition=commercial) | $199/usr/year | Jetbrains IDE#Suite ($649/year) |                |      |         |   |
 
 
-__Documentation infrastructure__
+### Documentation infrastructure 
 
 - Tooling for documentation generation (eg. Gitbook, Docusaurus, reathedocs.io ... -> Stev)
 - Hosting for documentation (github pages, self hosted...)
 - Bonus points: make code and documentation tightly coupled
 - Bonus points: integrate documentation rollout with CI
 
-__Developer-developer and developer-community communication channels__
+### Developer-developer and developer-community communication channels 
 
 | Status | Service                                                  | Cost           | Alternatives   | Specifications                                         | TODO | Related | ? |
 |--------|----------------------------------------------------------|----------------|----------------|--------------------------------------------------------|------|---------|---|
@@ -57,15 +55,14 @@ __Developer-developer and developer-community communication channels__
 |        | Gitter                                                   | free           |                | Public facing code-centric text-based discussion forum |      |         |   |
 |        | [Slack#Pro](https://ethereumclassiclabs.slack.com/plans) | $6.67/usr/mo   |                | Searchable and always-visible history                  |      |         |   |
 
-
-__Daily developer routine practices and policies__
+### Daily developer routine practices and policies 
 - Stand ups? When? In person?
 - Mutual time-available zones?
 - Scheduled architectural and design discussions?
 - Scheduled sprint routines?
 - Scheduled code review sessions?
 
-__Developer expense practices and policies__
+### Developer expense practices and policies 
 - Standard monthly allowance for hardware and compute infrastructure costs (eg. VPS rent, hardware wallet)
 - Standard allowance for "Oh, shit" hardware and compute infrastructure costs (eg. replace SSD)
 - Standard allowance for do-ocracy principles and independent research (eg. buy an Arduino, make a blockchain flamethrower)
