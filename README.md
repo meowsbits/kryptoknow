@@ -1,50 +1,45 @@
+## Spinup@Phase1
+
 __Remote version control__
 
-- Github org (`/etclabs`, `/bestwisdom`?); Privacy: :dollar:
-  + Membership at reader/writer (admin+) level for _all_ developers
-  + 
+| Status | Service                                                                | Cost      | Alternatives                     | Specifications                      | TODO            | Related | ? |
+|--------|------------------------------------------------------------------------|-----------|----------------------------------|-------------------------------------|-----------------|---------|---|
+|        | [ github.com#Team :registered: ](https://github.com/organizations/new) | $9/usr/mo | github.com#Business ($21/usr/mo) | _All_ devs should have push access+ | - [ ] namespace |         |   |
 
 __CI pipelines__
 
-- CircleCI account (Possibly Pro account: :dollar:)
-  > Handles OSX and Linux tests and builds and integrates seamlessly w/ Github
+These accounts should provide admin access to all developer team members. Probably this can be accomplished thru Github x-authentication, but should be ensured.
 
-- Appveyor account (possibly Pro :dollar:)
-  > Handle Windows tests and builds
-
-These accounts should provide admin access to all developer team members. Probably
-this can be accomplished thru Github x-authentication, but should be ensured.
+| Status | Service                                                                          | Cost    | Alternatives | Specifications | TODO                                                       | Related | ? |
+|--------|----------------------------------------------------------------------------------|---------|--------------|----------------|------------------------------------------------------------|---------|---|
+|        | CircleCI - Linux                                                                 | free    |              |                |                                                            |         |   |
+|        | [CircleCI - OSX ](https://circleci.com/pricing/#build-os-x)#Startup :registered: | $129/mo |              |                | - [ ] dev:build workspaces, hook up to repos we'll take on |         |   |
+|        | [Appveyor](https://www.appveyor.com/pricing/)                                    | free    |              |                | _ditto_                                                    |         |   |
+|        |                                                                                  |         |              |                |                                                            |         |   |
 
 __Builds: archive tools, storage, and distribution__
 
 - Mechanism to sign and ship nightly and tagged software builds
   + needs to handle authentication schemes for storage write permissions
 - Storage location (eg. Google CP, Amazon S3 :dollar:) for these archived builds
-
-
-> _isaac_: for tagged (@semver.minor+?) builds, it would be clever to add a feature to this mechanism
-> that would ensure that the tag and tagged commit (`HEAD`) was _signed_ with a GPG
-> key belonging to a known and publicly registered team member credentials with adequate permissions relating to the
-> development team.
->   
-> https://github.com/etcdevteam/janus was a tool designed for this at ETCDEV.
-> Cons of reuse:
-> - it handles semver formatting and gcp uploads; a very opinionated bundle
-> - the semver formatting is brittle; for example, `v.1.2.3-dirty-alpha` breaks it
-> - it's own verison control and tests are ugly, incorporating an ugly git submodule scenario
-> 
-> Pros of reuse:
-> - handles symmetric an asymmetric signatures
-> - proven to work, with many implementation examples
-
 - Distribution:
   + `homebrew` forumulas (@OSX only), eg. https://github.com/ethereumproject/homebrew-classic, currently supporting go-ethereum and emerald-cli (Vault)
   + Addtionally, `snap`,`apt`, `.AppImage`, `chocolate`, `docker`, et al channels should considered as well
 
 
+| Status | Service                       | Cost         | Alternatives | Specifications                              | TODO | Related | ? |
+|--------|-------------------------------|--------------|--------------|---------------------------------------------|------|---------|---|
+|        | Google Cloud Provider#Storage | ~$0.02/GB/mo | AWS#S3       |                                             |      |         |   |
+|        | Homebrew(#OSX only)           | free         |              | needs a github repo and regular maintenance |      |         |   |
+
+
 __Tooling__
-- ETCDEV Jetbrains IDE License set to expire tomorrow (Dec. 4 2018)
-  + They've also changed their open source license offerings, and now license will be paid if developers are paid
+
+
+| Status | Service                                                                      | Cost          | Alternatives                    | Specifications | TODO | Related | ? |
+|--------|------------------------------------------------------------------------------|---------------|---------------------------------|----------------|------|---------|---|
+|        | [Jetbrains IDE#Goland](https://www.jetbrains.com/go/buy/#edition=commercial) | $199/usr/year | Jetbrains IDE#Suite ($649/year) |                |      |         |   |
+
 
 __Documentation infrastructure__
 
@@ -55,20 +50,13 @@ __Documentation infrastructure__
 
 __Developer-developer and developer-community communication channels__
 
-- Gitter rooms, accounts
-  > These are associated by github org and repo, I believe
+| Status | Service                                                  | Cost           | Alternatives   | Specifications                                         | TODO | Related | ? |
+|--------|----------------------------------------------------------|----------------|----------------|--------------------------------------------------------|------|---------|---|
+|        | Office.com#email                                         | ?              | Protonmail     | It does email                                          |      |         |   |
+|        | [Zoom#Pro](https://zoom.us/pricing)                      | $14.99/host/mo | yes please?... | All devs should be hosts                               |      |         |   |
+|        | Gitter                                                   | free           |                | Public facing code-centric text-based discussion forum |      |         |   |
+|        | [Slack#Pro](https://ethereumclassiclabs.slack.com/plans) | $6.67/usr/mo   |                | Searchable and always-visible history                  |      |         |   |
 
-- Slack
-- Discord
-
-- Zoom, or another video conferencing medium
-
-- Email (@etcdevteam/protonmail might die)
-
-```
-_isaac_: IMO this should be primary domain for team communications, for the sake of transparency and community accessibility and engagement.
-This doesn't mean that all rooms should be publicly writable, but at every reasonable chance should be publicly readable.
-```
 
 __Daily developer routine practices and policies__
 - Stand ups? When? In person?
