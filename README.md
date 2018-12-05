@@ -10,12 +10,12 @@
 
 These accounts should provide admin access to all developer team members. Probably this can be accomplished thru Github x-authentication, but should be ensured.
 
-| Status | Service                                                                          | Cost    | Alternatives | Specifications | TODO                                                       | Related | ? |
-|--------|----------------------------------------------------------------------------------|---------|--------------|----------------|------------------------------------------------------------|---------|---|
-|        | CircleCI - Linux                                                                 | free    |              |                |                                                            |         |   |
-|        | [CircleCI - OSX ](https://circleci.com/pricing/#build-os-x)#Startup :registered: | $129/mo |              |                | - [ ] dev:build workspaces, hook up to repos we'll take on |         |   |
-|        | [Appveyor](https://www.appveyor.com/pricing/)                                    | free    |              |                | _ditto_                                                    |         |   |
-|        |                                                                                  |         |              |                |                                                            |         |   |
+| Status | Service                                                                          | Cost    | Alternatives                  | Specifications | TODO                                                       | Related | ? |
+|--------|----------------------------------------------------------------------------------|---------|-------------------------------|----------------|------------------------------------------------------------|---------|---|
+|        | CircleCI - Linux                                                                 | free    |                               |                |                                                            |         |   |
+|        | [CircleCI - OSX ](https://circleci.com/pricing/#build-os-x)#Startup :registered: | $129/mo |                               |                | - [ ] dev:build workspaces, hook up to repos we'll take on |         |   |
+|        | [Appveyor](https://www.appveyor.com/pricing/)                                    | free    |                               |                | _ditto_                                                    |         |   |
+|        | [FOSSA](https://fossa.com/pricing/)#Free                                         | free    | FOSSA#Enterprise ($46/dev/mo) |                |                                                            |         |   |
 
 ### Builds: archive tools, storage, and distribution
 
